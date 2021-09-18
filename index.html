@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELOJ</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <h2>RELOJ</h2>
+        <div class="reloj"><span class="span-1">00 </span> <span>:</span> <span class="span-2"> 00 </span> <span>:</span> <span class="span-3"> 00</span></div>
+    </div>
+
+    <div class="mountain">
+        <div class="social-media">
+            <a href="https://github.com/steven96lg" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/steven96lg/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <script>
+
+        const spanOne = document.querySelector('.span-1');
+        const spanTwo = document.querySelector('.span-2');
+        const spanThree = document.querySelector('.span-3');
+
+        setInterval(() => {
+            const date = new Date()
+
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+
+            if(seconds < 10){
+                seconds = "0"+seconds
+            }
+            if(minutes < 10){
+                minutes = "0"+minutes
+            }
+            if(hours < 10){
+                hours = "0"+hours
+            }
+
+            spanThree.innerHTML = seconds
+            spanTwo.innerHTML = minutes
+            spanOne.innerHTML = hours
+        })
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+</html>

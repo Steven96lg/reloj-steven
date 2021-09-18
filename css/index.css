@@ -1,0 +1,88 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    /*background-color:  hsl(235, 16%, 14%);*/
+    background-image: url('/img/bg-stars.svg');
+    background-repeat: no-repeat;
+    background-color:  hsl(234, 17%, 12%);
+    /*background-color: hsl(236, 21%, 26%);*/
+}
+
+.container{
+    width: 70%;
+    height: 300px;
+    margin: 90px auto 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h2{
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+    font-family: 'Gluten';
+    text-shadow: 6px 6px 1px black;
+}
+.container .reloj{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .reloj span{
+    font-size: 90px;
+    font-family: 'Gluten';
+    color: white;
+}
+
+.container .reloj .span-1,.span-2,.span-3{
+    background-color: rgba(255,255,255,.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px black;
+    padding: 23px 15px 10px;
+    margin: 0px 20px;
+    border-radius: 10px;
+}
+
+.mountain{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 200px;
+    background-image: url('/img/pattern-hills.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mountain .social-media{
+    width: 12%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mountain .social-media a{
+    color: white;
+    padding: 10px 15px;
+    font-size: 45px;
+    transition: all 1s;
+    border-radius: 5px;
+}
+
+.mountain .social-media a:hover{
+    background-color: rgba(255,255,255,.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 5px black;
+}
